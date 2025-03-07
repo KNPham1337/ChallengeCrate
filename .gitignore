@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+ChallengeCrate-Client/node_modules
+ChallengeCrate-Client/dist
+
+ChallengeCrate-Server/node_modules
+ChallengeCrate-Server/dist
