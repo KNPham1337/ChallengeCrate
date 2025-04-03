@@ -1,10 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { ModeToggle } from "./components/theme/mode-toggle";
+import { ThemeProvider } from "./components/theme/theme-provider";
+
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+      <ModeToggle />
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 }
 
